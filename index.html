@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Introduction to Fonts in CSS</title>
+<link rel="stylesheet" type="text/css" href="css/page2.css">
+</head>
+
+<body>
+	<div class="container">
+    	<header>
+        	<h1> Introduction to CSS - Styling Fonts</h1>
+           		<img src="fonts-tutorial.jpg" width="960" height="400" alt="fonts"/>
+            <nav>
+                	<a href="#">Page 2</a>
+            </nav>
+    	</header>
+			<main>
+				<p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. In this tutorial, beginners can learn how to use this technology to create fonts that are visually appealing and engages their audience through different styles of font and font size. </p>
+				<p> One of the most important choices you'll make for your website is the font for your written content displayed on your website.</p>
+			</main>
+			<section id="font-family-group">
+				<h2>Font Family</h2>
+				<p>To begin, in order to set a type of font for your desired selector, you must use the font-family property. If you'd like to set a particular font to your paragraph, you would type in:<br>
+				<img src="img/example-1.jpg" width="570" height="170" alt="Font Family Example" title="Font Family Example">
+				<img src="img/times-new-roman-example.jpg" width="570" height="134" alt="Times New Roman Example" title="Times New Roman Example">
+				<p>Surround multi word font names with quotes. Notice how the font for that desired section has now changed. However, visitors will only see the fonts they already have installed on their system. For example, Heveltica is a Mac font but will not be displayed the same way on other operating systems.</p>
+				<!--Images of helvetica on a mac, same content in other font for another web browser-->
+				<p> If the visitor does not have the font you have chosen, their browser will use the default font instead. Therefore, choosing multiple font types is highly recommended. To do this, use the font-family property to list more than one font. The browser will use the first listed font that is available on the visitor's system or loaded as a web font. You should include these three categories of fonts:</p>
+					<ul>
+						<li>The preferred font</li>
+						<li>One or more alternatives</li>
+						<li>A generic standard font incase your other options do not work on their web browser</li>
+					</ul>
+				<p>To specify for these alternative options of fonts, you would type the font-family: <i>name</i>, with name being your first choice of font. Then type <i>name2</i> and <i>name3</i> (your second and third choices), only being seperated by a comma and space. Then, finish with a generic font name (ex: serif, sans-serif, cursive) based on whichever style best fits your content.</p>
+				<p> For example:</p>
+				<img src="img/three-fonts-used.jpg" width="570" height="106" alt="three fonts used" title="Three Fonts You Should Use">
+				<p>In the above example, Mac users will be able to see the Helvetica font, and visitors using different operating systems will still be able to view your content in either Tahoma or Arial.</p>
+			</section>
+			<section id="font-size-group">
+			<h2>Font Size</h2>
+			<p>The font-size property sets the size of your text. This is another very important part of your design, as not also does the size of text determine where a visitor looks, but also helps a visitor determine what is your heading, a paragraph and so on, ultimately helping them determine what is the most important information to read.</p>
+			<p>There are two primary ways to change the font-size of your text. These are through pixels, or have the size be relative to the element's parent font size by using a percentage, em.</p>
+				<h3>Font Size With Pixels</h3>
+					<p>To set a font size using pixels, you should use the font-size property within your desired selector. Then, you would indicate the number of pixels you would like that text to be. As the number increases, the larger the font will be. In the example below, in order to have the first header larger than the second header, and the second header larger than the paragraph, the following code is written: </p>
+					<img src="img/font-size-example.jpg" width="570" height="338" alt="font size example" title="Font Size Coding Example">
+					<p>This coding would look like:</p>
+					<img src="img/font-size-displayed.jpg" width="570" height="278" alt="font size displayed" title="Font Size Coding Visual">
+			</section>
+			
+    </div><!--ends container-->
+</body>
+</html>
